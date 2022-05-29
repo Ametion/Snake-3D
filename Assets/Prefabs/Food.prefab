@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1008466734532976332}
   - component: {fileID: 1008466734532976333}
   - component: {fileID: 1008466734532976334}
-  - component: {fileID: 1008466734532976329}
   - component: {fileID: 1008466734532976330}
+  - component: {fileID: 2825488290998131519}
   m_Layer: 0
   m_Name: Food
   m_TagString: Food
@@ -92,12 +92,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008466734532976335}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1008466734532976329
+--- !u!114 &1008466734532976330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,11 +106,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1008466734532976335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c265745906347449ab4dee35a71efc2, type: 3}
+  m_Script: {fileID: 11500000, guid: ddd3ce5086d141b18301ac33df42dd67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: Snake
-  _event:
+--- !u!114 &2825488290998131519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008466734532976335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31944d26723d4964860f3199bfeb824d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tag: Player
+  _action:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1008466734532976330}
@@ -125,15 +137,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1008466734532976330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008466734532976335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd3ce5086d141b18301ac33df42dd67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

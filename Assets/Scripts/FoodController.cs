@@ -11,7 +11,7 @@ namespace Components
         {
             while (true)
             {
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(5f); 
                 _spawnComponent.SpawnByRandomPositionInParent();
             }
         }
