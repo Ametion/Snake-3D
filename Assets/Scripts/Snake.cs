@@ -17,14 +17,14 @@ public class Snake : MonoBehaviour
 
         _gameSession = FindObjectOfType<GameSession>();
     }
-
+    
     private void Update()
     {
         Time.timeScale = _gameSession.PauseDataModel.IsPause ? 0 : 1;
 
         if (!_gameSession.PauseDataModel.IsPause)
         {
-            _rigidbody.AddRelativeForce(Vector3.forward * speed);
+            _rigidbody.AddRelativeForce(Vector3.forward * speed * Time.deltaTime);
 
             var angel = Input.GetAxis("Horizontal") * rotationSpeed;
             transform.Rotate(0, angel, 0);
